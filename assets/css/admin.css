@@ -1,0 +1,118 @@
+/* Admin table styles */
+.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+}
+
+.wp-list-table th {
+    background: #f9f9f9;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #32373c;
+    font-size: 14px;
+}
+
+.wp-list-table.admin-table thead tr th {
+    text-align: left !important;
+}
+
+.wp-list-table td {
+    padding: 12px;
+    width: 400px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #555;
+}
+
+.wp-list-table tr:hover {
+    background-color: #f7f7f7;
+}
+
+.wp-list-table .striped > tbody > tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Column specific styles */
+.wp-list-table td:first-child {
+    /* Date column */
+    white-space: nowrap;
+}
+
+.wp-list-table td:nth-child(2) {
+    /* Question column */
+    min-width: 200px;
+}
+
+.wp-list-table td:nth-child(3) {
+    /* Response column */
+    min-width: 250px;
+}
+
+/* Empty state message */
+.wp-list-table tbody tr.no-items td {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Responsive table */
+@media screen and (max-width: 782px) {
+    .wp-list-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .wp-list-table th,
+    .wp-list-table td {
+        padding: 8px;
+    }
+
+    .wp-list-table td {
+        font-size: 13px;
+    }
+}
+.text-input-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.text-input-row .handle {
+    cursor: move;
+    color: #999;
+    margin-right: 8px;
+    padding: 5px;
+}
+
+.text-input-fields {
+    flex-grow: 1;
+    margin: 0 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.text-input-row .remove-text-input {
+    color: #dc3232;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.text-input-row .remove-text-input:hover {
+    color: #a00;
+}
+
+#text-inputs-container {
+    margin-bottom: 10px;
+}

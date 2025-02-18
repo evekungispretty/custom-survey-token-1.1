@@ -1,0 +1,5 @@
+[display_survey 
+questions="39, 50, 76" 
+form_id="module1-1" 
+success_message="Great job! Watch this video to learn more."
+next_page="https://education.ufl.edu/thrives/modules-home/module-1/1-1"]
